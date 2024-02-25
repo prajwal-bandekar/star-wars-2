@@ -1,0 +1,338 @@
+body {
+  font-family: "Star Jedi";
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+.app {
+  width: 97%;
+  height: max-content;
+  margin: 0px auto;
+  padding: 20px;
+  background-color: #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-position: center;
+
+  h1 {
+    color: #f5f5f5;
+    text-align: center;
+    font-family: "Star Jedi";
+    letter-spacing: 2px;
+    font-size: 3rem;
+  }
+  h3 {
+    color: #f5f5f5;
+    text-align: center;
+    font-family: "Star Jedi";
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-top: -20px;
+  }
+}
+
+.planets-container {
+  padding: 0 150px;
+  margin-top: 2.5rem;
+  font-family: "PP mori";
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.planet-card {
+  border: 3px solid #ddd;
+background-color: #0c111b;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  margin-bottom: 20px; 
+  margin-left: auto; 
+  margin-right: auto; 
+  transition: 0.45s;
+
+  h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: "Star Jedi";
+    letter-spacing: 6px;
+    color: #ffff00;
+    margin-top: 2px;
+  }
+
+  .planet-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+p {
+    font-size: 1.45rem;
+    font-weight: bold;
+    border-radius: 12px;
+    height: 80px; 
+    background-color: #b515ce;
+    text-align: center;
+    flex-basis: calc(33.33% - 20px); 
+    margin: 8px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    transition: 0.45s;
+  }
+
+  p:hover {
+    font-size: 1.45rem;
+    background-color: #d8d8d8;
+    color: #000000;
+  }
+
+}
+
+/* Hover */
+.pagination {
+  margin-top: 20px;
+  font-family: sans-serif;
+  font-weight: 900;
+  display: flex;
+  width: 35%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  font-family: "Star Jedi";
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 3px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.pagination button:hover {
+  background-color: #e474f5;
+}
+
+.pagination button.active {
+  background-color: #B515CE;
+}
+
+.rotating-loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.resident {
+  margin-top: 2rem;
+}
+
+.resident h3 {
+  font-family: "Star Jedi";
+  letter-spacing: 2px;
+}
+
+.resident table {
+  border-collapse: collapse;
+  margin: 0 auto; 
+  margin-bottom: 20px;
+}
+
+.resident th,
+.resident td {
+  border: 1px solid white;
+  padding: 18px;
+}
+
+.resident th {
+  background-color: black; 
+  color: white;
+  text-align: left;
+}
+
+.resident tr:nth-child(even) {
+  background-color: rgb(66, 66, 66); 
+  transition: 0.10s;
+}
+
+.resident tr:nth-child(odd) {
+  background-color: #202020; 
+  transition: 0.10s;
+}
+
+.resident tr:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
+
+
+#notfound{
+  height: 60px;
+  width: 50%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: rgb(206, 47, 47);
+  font-size: 1.5rem;
+  font-weight: 300;
+  transition: 0.45s;
+}
+#notfound:hover{
+  color: whitesmoke;
+font-size: 1.6rem;
+font-weight: 500;
+}
+
+
+@media screen and (min-width: 768px) {
+  .planet-card {
+    width: 100%; 
+  }
+
+  .planet-details {
+    flex-wrap: nowrap; 
+  }
+
+  p {
+    flex-basis: 100%; 
+  }
+ 
+  .pagination button {
+    padding: 9px 15px;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 3px;
+  }
+ 
+}
+
+.planets-container {
+  margin-top: 2rem;
+  padding: 0 20px; 
+  font-family: "PP mori";
+}
+
+.planet-card {
+  width: 100%; 
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box; 
+  padding: 10px; 
+  background-color: #0c111b;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  margin-bottom: 20px;
+}
+
+.pagination {
+  width: 80%; 
+  display: flex;
+  justify-content: center; 
+}
+
+.pagination button {
+  padding: 8px 12px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 3px;
+}
+
+p {
+  font-size: 1.35rem; 
+}
+
+
+@media screen and (min-width: 768px) {
+  .planets-container {
+    padding: 0 150px;
+  }
+
+  .planet-card {
+    width: 90%;
+    padding: 20px; 
+  }
+
+  .pagination {
+    width: 60%;
+  }
+
+  .pagination button {
+    padding: 9px 15px;
+  }
+
+  p {
+    font-size: 1.55rem;
+  }
+
+  .planet-details p {
+    width: calc(33.33% - 20px);
+    margin: 5px;
+    font-size: 1.35rem;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .pagination button {
+    margin-right: 5px; 
+  }
+
+  p {
+    font-size: 1rem; 
+  }
+
+  .planet-details p {
+    width: calc(50% - 20px);
+    margin: 5px;
+    font-size: 1rem;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .resident table {
+    max-width: 1200px; 
+    margin: 0 auto; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .resident th,
+  .resident td {
+    padding: 12px; 
+    font-size: 0.9rem; 
+  }
+}

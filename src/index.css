@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Star Jedi';
+  src: url('./Assets/fonts/Starjedi.ttf') format('truetype'); 
+
+}
+
+body {
+  margin: 0;
+  
+    font-family: 'Star Jedi';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+
+    font-family: 'Star Jedi';
+}

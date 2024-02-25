@@ -1,0 +1,120 @@
+#footer {
+  height: auto; 
+  width: 92.33%;
+  background-color: #111827;
+  color: #e867fc;
+  display: flex;
+  /* margin-left: 350px ; */
+  flex-direction: column; 
+  align-items: center;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.newsletter input {
+  margin-top: 10px;
+  margin-right: 2.5px;
+  height: 35px;
+  width: 100%; 
+  max-width: 300px; 
+  border-radius: 8px;
+  padding: 0 12px;
+  border: none;
+}
+
+.newsletter {
+  font-size: 1.5rem;
+  text-align: center; 
+  font-family: sans-serif;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+#newsbutton {
+  height: 38px;
+  width: 100%;
+  max-width: 120px;
+  border: none;
+  border-radius: 8px;
+  background-color: #e867fc;
+  transition: 0.45s;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.socials {
+  width: 100%; 
+  max-width: 30rem; 
+  font-family:sans-serif;
+}
+
+#findushere{
+  margin-top: 1rem;
+}
+
+#socialLink {
+  font-size: large;
+  font-weight: 400;
+  color: white;
+  text-align: center; 
+  margin-bottom: 1rem;
+}
+
+#socialLink a {
+  color: white;
+  margin-right: 10px; 
+}
+#socialLink a:hover {
+  color: rgb(255, 128, 217);
+}
+#address {
+  font-family: "Star Jedi";
+  letter-spacing: 2px;
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-align: center; 
+  margin-top: -0.5rem;
+}
+
+#addressLink {
+  font-size: medium;
+  margin-top: -0.2rem;
+  font-weight: 300;
+  color: white;
+  text-align: center; 
+}
+
+#button-sub {
+  font-size: 1.2rem;
+  height: 38px;
+  width: 100%;
+  max-width: 150px; 
+  background-color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+}
+
+#button-sub:hover {
+  background-color: #383838;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  #footer {
+    flex-direction: row; 
+    text-align: left; 
+    padding: 20px 50px; 
+  }
+
+  .newsletter {
+    width: 50%; 
+    max-width: 400px; 
+  }
+
+  .socials {
+    width: 50%; 
+  }
+}
